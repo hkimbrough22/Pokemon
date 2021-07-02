@@ -19,6 +19,10 @@ header {
         font-weight: 900;
         padding-bottom: 100px;
     }
+    h2{
+        text-align: center;
+        font-size: 100px;
+    }
     nav li {
         font-weight: 500;
         background-color: rgba(10, 10, 10, 0.383);
@@ -63,3 +67,6 @@ li {
      font-size: 20px;
      margin: 200px;
     }
+#stars{
+    width: 100px;
+}

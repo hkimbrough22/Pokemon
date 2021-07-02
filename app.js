@@ -1,30 +1,47 @@
-console.log('Hello World!');
-function getUsername (){
-    let userName = prompt('Please enter your name');
-    document.write("Hello " + userName + ", ");
-}
-getUsername();
-
-function getPMpref(){
-    let likePM = prompt("Do you like Pokemon?");
-    if(likePM == "yes"){
-        alert("I like Pokemon too!");
-    }
-    else (alert("I'm sorry to hear that! Maybe try Digimon, you square!"));
-}
-getPMpref();
 function getTOD (){
     let day = new Date ();
     let time = day.getHours ();
     console.log(time);
     if (time <= 10){
-        return " Good Morning! Welcome!";
+        document.write(" Good Morning! Welcome!");
     } else if (time >10 && time < 14){
-        return " Good Afternoon! Welcome!";
+        document.write (" Good Afternoon! Welcome!");
     } else {
-        return " Good Evening! Welcome!";
+        document.write(" Good Evening! Welcome!");
     }
 }
-let element = getTOD();
-document.write(element);
 
+function getUsername (){
+    let userName = prompt('Please enter your name');
+    document.write("Hello " + userName + ", ");
+}
+
+function getPMpref(){
+    let likePM = prompt("Please rate how much you love Pokemon out of 5 stars!");
+    while(likePM < 0 || likePM > 5){
+        likePM = prompt ("I'm sorry, please answer between 0 - 5.");
+    }
+    if (likePM == 3 || likePM == 4 || likePM == 5){
+        alert("Awesome! We love Pokemon a lot too!");
+        document.write (likePM + " stars for you!");
+        document.write ("<br>");
+    }
+    else if(likePM == 0 || likePM == 1 || likePM ==2){
+        alert ("I'm sorry to hear that! Maybe try Digimon, you square!")
+        document.write ("Enjoy your " + likePM + " stars, square!")
+        document.write ("<br>");
+    }
+    else{
+        alert ("Welp, answer next time, I guess.")
+        document.write ("Everyone come check out this person... they dont even like rating Pokemon.")
+        document.write ("<br>");
+        document.write ('<img id = "stars" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Star_red.svg/1200px-Star_red.svg.png">');
+        document.write ("<br>");
+        document.write ("You still get one star..."); 
+        document.write ("<br>");
+        document.write ("No, no... It's on the house. Enjoy your time.");
+    }
+    for(let i = 1; i <= likePM; i++){
+        document.write('<img id = "stars" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Star_red.svg/1200px-Star_red.svg.png">');
+    }
+}
