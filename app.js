@@ -26,9 +26,14 @@ function getPMpref(){
         document.write (likePM + " stars for you!");
         document.write ("<br>");
     }
-    else if(likePM == 0 || likePM == 1 || likePM ==2){
+    else if(likePM == 0 || likePM ==2){
         alert ("I'm sorry to hear that! Maybe try Digimon, you square!")
         document.write ("Enjoy your " + likePM + " stars, square!")
+        document.write ("<br>");
+    }
+    else if(likePM == 1){
+        alert ("I'm sorry to hear that! Maybe try Digimon, you square!")
+        document.write ("Enjoy your " + likePM + " star, square!")
         document.write ("<br>");
     }
     else{

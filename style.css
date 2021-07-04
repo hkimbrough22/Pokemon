@@ -17,7 +17,7 @@ header {
     h1 {
         background-color: rgba(128, 127, 127, 0.33);
         font-weight: 900;
-        padding-bottom: 100px;
+        padding-bottom: 0px;
     }
     h2{
         text-align: center;
@@ -37,6 +37,8 @@ footer {
     color: white;
     font-size: 50px;
     text-align: center;
+    margin: 0px;
+    padding: 0px;
     }
 
 body {
@@ -47,9 +49,12 @@ section {
     background-color: white;
     color: black;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-left: 300px;
     margin-right: 300px;
-    padding: 100px
+    padding-top: 0px;
+
     }
 
 li {
@@ -57,16 +62,35 @@ li {
     display: inline;
     padding: 5px;
     font-size: 60px;
-    margin: 50px;
     }
 
  #section1 {
-     width: 30%;
+     width: 40%;
+     float: left;
     }
+#pSection1 {
+    padding:0px;
+    border-top: 0px;
+    padding-bottom: 5em;
+}
+#section2{
+    float: right;
+    width: 40%;
+}
+#pSection2{
+    padding-bottom: 5em;
+    margin-top: 0em;
+}
  p {
+     text-align: left;
      font-size: 20px;
-     margin: 200px;
+     margin-left: 100px;
+     margin-right: 100px;
+     margin-top: 2em;
     }
 #stars{
     width: 100px;
+}
+#pFooter{
+    text-align: center;
 }
